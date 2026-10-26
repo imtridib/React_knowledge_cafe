@@ -1,18 +1,31 @@
-# React + Vite
+# Knowledge Cafe — React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React app that displays blog/article cards and lets users bookmark articles and track accumulated reading time. The main interface is divided into blog content and a bookmarks/reading summary panel.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Display blog entries through reusable components.
+- Add selected entries to a bookmark list.
+- Mark articles as read and accumulate reading time.
+- Manage UI state with React hooks.
 
-## React Compiler
+## Tech stack
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- React
+- Vite
+- JavaScript
+- React Icons
+- Tailwind CSS
 
-Note: This will impact Vite dev & build performances.
+## Run locally
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Open the local URL printed by Vite. To create a production build, run `npm run build`.
+
+## Status
+
+This is a client-side practice project. Bookmark and reading-time state is held in the app; persistent storage or a backend is not documented in the current implementation.
